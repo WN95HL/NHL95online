@@ -1,0 +1,44 @@
+.menuClosed {
+  max-height: 0px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.menuClosed.openMenu {
+  max-height: 500px;
+}
+
+.menuClosed li {
+  padding-left: 0.75rem;
+}
+
+.menuClosed li:hover {
+  background-color: rgb(51, 65, 85);
+  color: rgb(203, 213, 225);
+}
+
+/* menu close marker */
+.menuClosed li:hover span {
+  color: rgb(203, 213, 225);
+}
+
+/* hover for last menu item to contrast from the body */
+a[href="/login"] li:hover {
+  background-color: rgb(30, 41, 59);
+}
+
+.upload-list{
+  position: absolute;
+  display: none;
+  right: 0;
+  overflow: hidden;
+}
+
+.upload-list li{
+  color:black;
+  background-color: #CBD5e1;
+  white-space: nowrap;
+  font-size: .85rem;
+  padding: .1rem 2rem;
+  margin-top: .35rem;
+  border-radius: .1rem;
+}
